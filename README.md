@@ -63,7 +63,7 @@ If you want to learn how to build something similar, check out tutorials and doc
 
 1. **Clone the repo**
     ```sh
-    git clone https://github.com/AnveshSrivastava/Portfolio
+    git clone (https://github.com/AnveshSrivastava/Portfolio)
     cd your-repo
     ```
 
