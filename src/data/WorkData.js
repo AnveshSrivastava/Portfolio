@@ -26,7 +26,7 @@ export const Work = [
         description:"A modern e-commerce platform built with Spring Boot + MongoDB backend and React.js + Tailwind CSS frontend, featuring role-based access control for users and administrators.",
         tags:["react","java","springboot","mongodb","tailwindcss"],
         
-        demo:"http://devto-clone-codebucks27.vercel.app/",
+        demo:"",
         github:"https://github.com/AnveshSrivastava/SmartCart"
     },
     {
@@ -35,8 +35,8 @@ export const Work = [
         description:"A cool looking sidebar menu build using ReactJS and styledComponents.It has really smooth animations.",
         tags:["react","styledComponents","react-router"],
         
-        demo:"https://react-sidebar.vercel.app/",
-        github:"https://github.com/codebucks27/react-sidebar"
+        demo:"",
+        github:""
        
     },{
         id:5,
@@ -45,7 +45,7 @@ export const Work = [
         tags:["HTML","CSS","JavaScript"],
         
         demo:"https://anveshsrivastava.github.io/To-do-list-app/",
-        github:"https://github.com/codebucks27/React-Redux-Todo-App"
+        github:"https://github.com/AnveshSrivastava/To-do-list-app"
         
     },
     {
@@ -54,7 +54,7 @@ export const Work = [
         description:"A reponsive flower shop website built using HTML and CSS.",
         tags:["HTML","CSS","JavaScript","Node.js","Express.js"],
         
-        demo:"http://react-responsive-navbar-codebucks27.vercel.app/",
+        demo:"",
         github:"https://github.com/AnveshSrivastava/Mini-Project"
         
     },
