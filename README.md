@@ -8,7 +8,7 @@ This repository contains the final code for my personal portfolio website projec
 
 ## 🔗 Demo
 
-👉 **Check out the live website here:** [Your Live Demo Link](#)
+👉 **Check out the live website here:** [https://anvesh-srivastava.netlify.app/](#)
 
 ---
 
@@ -59,23 +59,11 @@ If you want to learn how to build something similar, check out tutorials and doc
 
 ---
 
-## 📸 Screenshots
-
-- **Home Page**
-
-- **About Page**
-
-- **Contact Page**
-
-*(Add your screenshots here)*
-
----
-
 ## ⚙️ Installation & Setup
 
 1. **Clone the repo**
     ```sh
-    git clone https://github.com/your-username/your-repo.git
+    git clone https://github.com/AnveshSrivastava/Portfolio
     cd your-repo
     ```
 
@@ -126,8 +114,8 @@ For other deployment guides, see the official [React deployment docs](https://fa
 
 **Anvesh Srivastava**
 
-- [LinkedIn](#)
-- [GitHub](#)
+- [LinkedIn](https://www.linkedin.com/in/anvesh-srivastava/)
+- [GitHub](https://github.com/AnveshSrivastava)
 
 ---
 
