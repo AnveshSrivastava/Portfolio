@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import React from 'react'
 import styled from 'styled-components';
-import { Github } from '../components/AllSvgs';
+import Github from '../assets/Images/github.png'
 
 
 
@@ -116,7 +116,7 @@ const Card = (props) => {
                     Visit
                 </Link>
                 <Git  href={github}  target="_blank">
-                    <Github width={30} height={30} />
+                    <img src={Github} width={30} height={30} alt="github" />
                 </Git>
             </Footer>
         </Box>

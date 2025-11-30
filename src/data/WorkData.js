@@ -5,7 +5,7 @@ export const Work = [
         id:1,
         name:"Anime Streaming Platform",
         description:"It is build on top of the React JS, with multiple pages mimicing the frontend of an anime streaming platform.",
-        tags:["react","typescript","lucide","sass"],
+        tags:["React.JS","TypeScript","Lucide-Icons"],
         
         demo:"https://aniwavee.netlify.app/",
         github:"https://github.com/AnveshSrivastava/AniWave"
@@ -26,17 +26,17 @@ export const Work = [
         description:"A modern e-commerce platform built with Spring Boot + MongoDB backend and React.js + Tailwind CSS frontend, featuring role-based access control for users and administrators.",
         tags:["react","java","springboot","mongodb","tailwindcss"],
         
-        demo:"",
+        demo:"https://smart-cart-web.netlify.app/",
         github:"https://github.com/AnveshSrivastava/SmartCart"
     },
     {
         id:4,
-        name:"Sidebar Menu",
-        description:"A cool looking sidebar menu build using ReactJS and styledComponents.It has really smooth animations.",
-        tags:["react","styledComponents","react-router"],
+        name:"SlotSwapper",
+        description:"Schedule management by allowing users to mark their events as swappable and exchange them with other users.",
+        tags:["React.JS","Node.JS","Express.JS","PostgreSQL"],
         
-        demo:"",
-        github:""
+        demo:"https://slotswapperr.netlify.app/",
+        github:"https://github.com/AnveshSrivastava/SlotSwapper"
        
     },{
         id:5,
@@ -50,12 +50,12 @@ export const Work = [
     },
     {
         id:6,
-        name:"Responsive Flower-Shop Website",
-        description:"A reponsive flower shop website built using HTML and CSS.",
-        tags:["HTML","CSS","JavaScript","Node.js","Express.js"],
+        name:"SeaMist Assignment Tracker",
+        description:"A premium, calm, and distraction-free assignment tracker for students.",
+        tags:["HTML","CSS","JavaScript", "LocalStorage"],
         
-        demo:"",
-        github:"https://github.com/AnveshSrivastava/Mini-Project"
+        demo:"https://assignment-tracker-app.netlify.app/",
+        github:"https://github.com/AnveshSrivastava/Assignment-Tracker"
         
     },
     
