@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import Github from '../assets/Images/github.png'
 
 
+import { mediaQueries } from '../components/mediaQueries'
 
 const Box = styled(motion.li)`
 width: 16rem;
@@ -25,6 +26,14 @@ color:${props => props.theme.text};
 border: 1px solid ${props => props.theme.text};
 
 }
+
+${mediaQueries(768)`
+  width: 70vw;
+  margin-right: 0;
+  margin-bottom: 2rem;
+  height: auto;
+  min-height: 40vh;
+`}
 `
 const Title = styled.h2`
 font-size: calc(1em + 0.5vw);

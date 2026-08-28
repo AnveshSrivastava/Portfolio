@@ -11,14 +11,22 @@ import { Work } from "../data/WorkData";
 import Card from "../subComponents/Card";
 import { YinYang } from "./AllSvgs";
 import BigTitlte from "../subComponents/BigTitlte";
+import { mediaQueries } from "./mediaQueries";
 
 const Box = styled.div`
   background-color: ${(props) => props.theme.body};
 
-  height: 400vh;
+  height: 600vh;
   position: relative;
   display: flex;
   align-items: center;
+
+  ${mediaQueries(768)`
+    height: auto;
+    min-height: 100vh;
+    padding: 8rem 0;
+    align-items: flex-start;
+  `}
 `;
 
 const Main = styled(motion.ul)`
@@ -29,6 +37,16 @@ const Main = styled(motion.ul)`
   display: flex;
 
   color: white;
+
+  ${mediaQueries(768)`
+    position: relative;
+    top: auto;
+    left: auto;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+  `}
 `;
 const Rotate = styled.span`
   display: block;
@@ -38,6 +56,11 @@ const Rotate = styled.span`
   width: 80px;
   height: 80px;
   z-index: 1;
+
+  ${mediaQueries(768)`
+    width: 40px;
+    height: 40px;
+  `}
 `;
 
 // Framer-motion Configuration
@@ -61,15 +84,20 @@ const WorkPage = () => {
     let element = ref.current;
 
     const rotate = () => {
-      element.style.transform = `translateX(${-window.pageYOffset}px)`;
-
+      if (window.innerWidth > 768) {
+        element.style.transform = `translateX(${-window.pageYOffset}px)`;
+      } else {
+        element.style.transform = 'none';
+      }
       return (yinyang.current.style.transform =
         "rotate(" + -window.pageYOffset + "deg)");
     };
 
     window.addEventListener("scroll", rotate);
+    window.addEventListener("resize", rotate);
     return () => {
       window.removeEventListener("scroll", rotate);
+      window.removeEventListener("resize", rotate);
     };
   }, []);
 

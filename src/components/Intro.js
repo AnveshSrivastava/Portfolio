@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import {motion} from 'framer-motion'
 import Me from '../assets/Images/profile-img.png'
+import { mediaQueries } from './mediaQueries'
 
 
 const Box = styled(motion.div)`
@@ -33,6 +34,26 @@ background-size: 100% 2px;
 
     z-index:1;
 
+${mediaQueries(768)`
+    width: 85vw;
+    flex-direction: column;
+    justify-content: space-between;
+
+    border-left: none;
+    border-right: none;
+    border-top: 2px solid ${props => props.theme.body};
+    border-bottom: 2px solid ${props => props.theme.text};
+    background: linear-gradient(
+        to bottom,
+        ${props => props.theme.body} 50%,
+        ${props => props.theme.text} 50%) left,
+        linear-gradient(
+        to bottom,
+        ${props => props.theme.body} 50%,
+        ${props => props.theme.text} 50%) right;
+    background-repeat: no-repeat;
+    background-size: 2px 100%;
+`}
 `
 const SubBox = styled.div`
 width: 50%;
@@ -45,8 +66,17 @@ display: flex;
     left: 50%;
     transform: translate(-50%,0%);
     width: 100%;
-    height: auto;
+    height: 650px;
+    object-fit: contain;
 }
+${mediaQueries(768)`
+    width: 100%;
+    height: 50%;
+    .pic {
+      width: 100%;
+      height: 100%;
+    }
+`}
 `
 
 const Text = styled.div`
@@ -66,7 +96,13 @@ justify-content: space-evenly;
 
 }
 
-
+${mediaQueries(768)`
+    font-size: calc(1em + 1.5vw);
+    padding: 1rem;
+    h1 {
+      font-size: 1.5em;
+    }
+`}
 
 `
 
@@ -90,7 +126,7 @@ const Intro = () => {
         animate={{opacity: 1}}
         transition={{ duration:1, delay:2 }}
                 >
-                    <img className="pic" src={Me} alt="Profile Pic" style={{ height: "650px"}}/>
+                    <img className="pic" src={Me} alt="Profile Pic" />
                 </motion.div>
             </SubBox>
         </Box>

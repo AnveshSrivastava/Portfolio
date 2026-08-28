@@ -7,6 +7,7 @@ import PowerButton from '../subComponents/PowerButton'
 import SocialIcons from '../subComponents/SocialIcons'
 import { YinYang } from './AllSvgs'
 import Intro from './Intro'
+import { mediaQueries } from './mediaQueries'
 ;
 
 
@@ -22,6 +23,11 @@ h2,h3,h4,h5,h6{
   font-family:'Karla', sans-serif ;
   font-weight:500;
 }
+${mediaQueries(768)`
+  h2 {
+    font-size: 1.2em;
+  }
+`}
 `
 
 const Container = styled.div`
@@ -35,6 +41,10 @@ top: 2rem;
 right: calc(1rem + 2vw);
 text-decoration: none;
 z-index:1;
+${mediaQueries(768)`
+  top: 1.5rem;
+  right: 1rem;
+`}
 `
 const BLOG = styled(NavLink)`
 color: ${props => props.theme.text};
@@ -111,6 +121,20 @@ transition: all 1s ease;
     display: ${props => props.click ? 'none' :'inline-block'  };
     padding-top: 1rem;
 }
+
+${mediaQueries(768)`
+  top: ${props => props.click ? '90%' :'50%'  };
+  left: ${props => props.click ? '85%' :'50%'  };
+  
+  &>:first-child{
+      width: ${props => props.click ? '80px' : '150px'};
+      height: ${props => props.click ? '80px' : '150px'};
+  }
+
+  &>:last-child{
+    font-size: 0.8em;
+  }
+`}
 `
 
 const DarkDiv = styled.div`
@@ -123,6 +147,13 @@ width: ${props => props.click ? '50%' : '0%'};
 height: ${props => props.click ? '100%' : '0%'};
 z-index:1;
 transition: height 0.5s ease, width 1s ease 0.5s;
+
+${mediaQueries(768)`
+  right: 0;
+  width: 100%;
+  height: ${props => props.click ? '50%' : '0%'};
+  transition: height 0.5s ease, width 1s ease 0.5s;
+`}
 `
 
 
@@ -208,7 +239,7 @@ const Main = () => {
                  whileHover={{scale: 1.1}}
                 whileTap={{scale: 0.9}}
                 >
-                    About.
+                    About
                 </motion.h2>
             </ABOUT>
             <SKILLS to="/skills">
@@ -224,7 +255,7 @@ const Main = () => {
                  whileHover={{scale: 1.1}}
                 whileTap={{scale: 0.9}}
                 >
-                    My Skills.
+                    My Skills
                 </motion.h2>
             </SKILLS>
 

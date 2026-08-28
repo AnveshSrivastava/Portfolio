@@ -9,6 +9,7 @@ import PowerButton from '../subComponents/PowerButton';
 import ParticleComponent from '../subComponents/ParticleComponent';
 import BigTitle from '../subComponents/BigTitlte'
 import astronaut from '../assets/Images/spaceman.png'
+import { mediaQueries } from './mediaQueries'
 
 const Box = styled.div`
 background-color: ${props => props.theme.body};
@@ -33,6 +34,12 @@ img{
     width: 100%;
     height: auto;
 }
+${mediaQueries(768)`
+    width: 40vw;
+    right: 10%;
+    top: 5%;
+    opacity: 0.3;
+`}
 `
 const Main =  styled.div`
   border: 2px solid ${(props) => props.theme.text};
@@ -53,6 +60,16 @@ const Main =  styled.div`
   top: 10rem;
   font-family: 'Ubuntu Mono', monospace;
   font-style: italic;
+
+${mediaQueries(768)`
+  width: 70vw;
+  height: 50vh;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1.5rem;
+  font-size: calc(0.8rem + 1vw);
+`}
 `
 
 
@@ -72,12 +89,12 @@ const AboutPage = () => {
             <img src={astronaut} alt="spaceman" />
         </Spaceman>    
         <Main>
-        I'm a full-stack developer located in India. I love to create simple yet beautiful websites with great user experience.
+        I'm a full-stack developer from India who enjoys building products that are both functional and thoughtfully designed.
 <br /> <br/>
-I'm interested in the whole frontend and backend tech stack. I enjoy solving problems through code, whether it’s building dynamic dashboards, authentication systems, or experimenting with streaming platforms. I'm currently a student and exploring as much as iI can and learning by creating real-world solutions. I love to write poems and read books.
+I'm particularly interested in backend engineering, system design, automation, and AI-powered applications. I enjoy solving problems through code—from building scalable APIs and background job systems to experimenting with LLMs and real-world automation.
 <br/> <br/>
-I balance logic with creativity. Beyond coding, I enjoy connecting with people, exploring new food, and vibe coding to kill time XD.
-        </Main>
+I'm currently a student, learning by building and constantly exploring new technologies. Beyond coding, I enjoy writing poems, reading books, discovering new food, and connecting with people.
+     </Main>
 
         <BigTitle text="ABOUT" top="10%" left="5%" />
 

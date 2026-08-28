@@ -11,6 +11,7 @@ import AnchorComponent from '../subComponents/Anchor'
 import BigTitle from "../subComponents/BigTitlte"
 import { motion } from 'framer-motion'
 
+import { mediaQueries } from './mediaQueries'
 
 const MainContainer = styled(motion.div)`
 background-image: url(${img});
@@ -33,12 +34,20 @@ display: flex;
 justify-content: center;
 align-items: center;
 padding-top: 10rem;
+
+${mediaQueries(768)`
+  padding-top: 8rem;
+`}
 `
 
 const Grid = styled.div`
 display: grid;
 grid-template-columns: repeat(2, minmax(calc(10rem + 15vw), 1fr));
 grid-gap: calc(1rem + 2vw);
+
+${mediaQueries(768)`
+  grid-template-columns: 1fr;
+`}
 `
 
 // Framer-motion config

@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import React from "react";
 // import { NavLink } from 'react-router-dom'
 import styled from "styled-components";
+import { mediaQueries } from './mediaQueries'
 
 const Box = styled(motion.a)`
   width: calc(10rem + 15vw);
@@ -23,6 +24,10 @@ const Box = styled(motion.a)`
     background-color: ${(props) => props.theme.text};
     transition: all 0.3s ease;
   }
+
+  ${mediaQueries(768)`
+    width: 80vw;
+  `}
 `;
 
 const Image = styled.div`

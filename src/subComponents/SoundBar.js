@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react'
 import styled, { keyframes } from 'styled-components'
 
 import music from "../assets/audio/u-said-it-v13-1167.mp3"
+import { mediaQueries } from '../components/mediaQueries'
 
 const Box = styled.div`
 display:flex;
@@ -10,6 +11,11 @@ position:fixed;
 left:8rem;
 top:3rem;
 z-index:10;
+
+${mediaQueries(768)`
+  left: 1rem;
+  top: 5rem;
+`}
 
 &>*:nth-child(1){
     animation-delay: 0.2s;

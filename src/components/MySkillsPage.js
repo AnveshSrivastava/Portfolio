@@ -9,6 +9,7 @@ import SocialIcons from '../subComponents/SocialIcons';
 import PowerButton from '../subComponents/PowerButton';
 import ParticleComponent from '../subComponents/ParticleComponent';
 import BigTitle from '../subComponents/BigTitlte'
+import { mediaQueries } from './mediaQueries'
 
 const Box = styled.div`
 background-color: ${props => props.theme.body};
@@ -18,6 +19,14 @@ position: relative;
 display: flex;
 justify-content: center;
 align-items: center;
+
+${mediaQueries(768)`
+  flex-direction: column;
+  padding: 8rem 0;
+  height: auto;
+  min-height: 100vh;
+  justify-content: flex-start;
+`}
 `
 
 const Button1 = styled.a`
@@ -43,6 +52,12 @@ const Button1 = styled.a`
     background-color: ${({ theme }) => theme.text};
   }
 
+  ${mediaQueries(768)`
+    width: auto;
+    height: auto;
+    padding: 1rem;
+    margin: 2rem 0;
+  `}
 `;
 
 
@@ -66,6 +81,14 @@ justify-content: space-between;
     color: ${props => props.theme.body};
     background-color: ${props => props.theme.text};
 }
+
+${mediaQueries(768)`
+  width: 70vw;
+  height: auto;
+  min-height: 40vh;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+`}
 `
 
 const Title = styled.h2`

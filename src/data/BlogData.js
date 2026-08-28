@@ -3,11 +3,11 @@
 export const Blogs = [
     {
         id:1,
-        name:"How to learn React in 2025?",
-        tags:["react","gsap","styled-components"],
-        date:"13 May, 2021",
+        name:"I Lost 4 Months of Work the Night Before My Project Presentation (Thanks to AI Hallucination)",
+        tags:["Ai Hallucination", "Github", "AI Agent", "Full Stack Developer"],
+        date:"15 Feb, 2026",
         imgSrc:"https://www.robinwieruch.de/logo.svg",
-        link:"https://www.robinwieruch.de/learning-react/"
+        link:"hhttps://medium.com/@anveshsrivastava9/i-lost-4-months-of-work-the-night-before-my-project-presentation-thanks-to-ai-hallucination-e33b136ef2c8"
     },
     {
         id:2,
@@ -19,11 +19,11 @@ export const Blogs = [
     },
     {
         id:3,
-        name:"React Loading Screen: Try these 3 cool loading screens for your app",
-        tags:["react","react-lottie","styled-components"],
-        date:"6 July, 2021",
-        imgSrc:"https://codebucks.hashnode.dev/_next/image?url=https%3A%2F%2Fcdn.hashnode.com%2Fres%2Fhashnode%2Fimage%2Fupload%2Fv1625552344293%2Fegwis0UIX.png%3Fw%3D1600%26h%3D840%26fit%3Dcrop%26crop%3Dentropy%26auto%3Dcompress%2Cformat%26format%3Dwebp&w=1920&q=75",
-        link:"https://codebucks.hashnode.dev/react-loading-screens"
+        name:"Life has trade-offs. So does every good system",
+        tags:["System Design Concepts", "Life Lessons", "Software Engineering", "Student Life", "Self Improvement"],
+        date:"12 Aug, 2026",
+        imgSrc:"",
+        link:"https://medium.com/@urayushjain/life-has-trade-offs-so-does-every-good-system-18d1715923c3"
     },
     {
         id:4,

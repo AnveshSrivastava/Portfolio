@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import { mediaQueries } from '../components/mediaQueries'
 
 const Text = styled.h1`
 position: fixed;
@@ -11,6 +12,9 @@ color:${props => `rgba(${props.theme.textRgba},0.1)`};
 font-size: calc(5rem + 5vw);
 z-index:0;
 
+${mediaQueries(768)`
+  font-size: calc(3rem + 5vw);
+`}
 `
 
 
