@@ -14,7 +14,7 @@ export const Work = [
             "Email Automation"
         ],
         demo: "https://drive.google.com/file/d/19Ot1ep3TovOhGRfL7hTKT92wCq5plgrZ/view?usp=sharing",
-        github: "https://github.com/AnveshSrivastava/ReachInbox"
+        github: "https://github.com/AnveshSrivastava/Email-Job-Scheduler"
         
     },
 
@@ -99,7 +99,7 @@ export const Work = [
             "Diffs",
             "Resume Engineering"
         ],
-        demo: "",
+        demo: "https://resumeflow-frontend-five.vercel.app/",
         github: "https://github.com/AnveshSrivastava/ResumeGraph"
     },
 

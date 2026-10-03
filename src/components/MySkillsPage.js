@@ -151,7 +151,7 @@ Tools & Platforms: Git, GitHub, Azure, Android Studio, Sanity.
 </Description>
 
             </Main>
-            <Button1 href="/resume.pdf" download = "Anvesh-Srivastav-Resume.pdf">Download my<br></br> resume</Button1>
+            <a href="https://drive.google.com/file/d/1M3zt8z_Iaza4LkA5P-4HPql3uGHrCTI6/view?usp=sharing">See my<br></br> resume</a>
             <Main>
 <Title>
     <Design width={40} height={40} /> Non-Technical Skills
